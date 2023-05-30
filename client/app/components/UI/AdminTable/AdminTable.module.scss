@@ -1,0 +1,40 @@
+.wrapper {
+	.header {
+		@apply flex items-center justify-between mt-8;
+		> button {
+			@apply bg-slate-400 bg-opacity-80 ml-10;
+		}
+	}
+
+	.item {
+		@apply flex items-center justify-between bg-gray-600 bg-opacity-20 mt-4 px-5 rounded-lg transition-colors hover:bg-opacity-50 min-w-full;
+		> div {
+			@apply text-white text-opacity-80 py-3;
+			width: 24%;
+			&:last-child {
+				@apply text-right justify-end;
+			}
+		}
+	}
+
+	.itemHeader {
+		@apply bg-white bg-opacity-20 shadow-lg mt-8 hover:bg-opacity-20;
+		> div {
+			@apply text-opacity-90 font-semibold py-2.5;
+		}
+	}
+
+	.notFound {
+		@apply text-lg text-white text-opacity-60 text-center py-3;
+	}
+
+	.actions {
+		@apply flex items-center;
+		> button {
+			@apply outline-none border-none bg-transparent text-xl text-white opacity-80 transition-opacity hover:bg-opacity-100;
+			&:first-child {
+				@apply mr-4;
+			}
+		}
+	}
+}

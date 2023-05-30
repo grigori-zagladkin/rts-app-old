@@ -1,0 +1,37 @@
+.footerWrapper {
+	@apply max-w-full bg-gray-500;
+	.footerInner {
+		@apply max-w-7xl mx-auto px-5 py-4;
+		> div {
+			@apply flex;
+			.footerAddress {
+				@apply mr-6;
+				h4 {
+					@apply font-bold;
+				}
+				address {
+					@apply text-lg;
+				}
+			}
+			.footerContact {
+				@apply mr-6;
+				h4 {
+					@apply font-bold;
+				}
+			}
+			.footerLinks {
+				@apply mr-6;
+				h4 {
+					@apply font-bold;
+				}
+			}
+		}
+		.footerCopyright {
+			@apply flex justify-center;
+		}
+	}
+}
+
+.content {
+	@apply min-h-screen mx-auto max-w-7xl;
+}

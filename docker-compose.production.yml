@@ -1,0 +1,13 @@
+version: "3"
+services:
+    api:
+
+    client:
+
+    nginx:
+
+    posgtre:
+
+volumes:
+
+networks:

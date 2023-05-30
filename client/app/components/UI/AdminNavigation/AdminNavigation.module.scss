@@ -1,0 +1,18 @@
+.nav {
+	@apply max-w-fit pr-5 my-10 min-h-screen;
+	border-right: white 1px solid;
+	.heading {
+		@apply text-white font-semibold mb-12 text-xl;
+	}
+
+	.item {
+		@apply mb-3 text-white;
+		&:hover {
+			@apply text-gray-400;
+		}
+	}
+
+	.active {
+		@apply text-white;
+	}
+}

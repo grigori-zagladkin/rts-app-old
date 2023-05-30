@@ -1,0 +1,47 @@
+.headerWrapper {
+	@apply max-w-full bg-slate-100;
+	.innerWrapper {
+		@apply flex px-4 py-3 items-center max-w-7xl mx-auto justify-between;
+		.logoBlock {
+			@apply flex flex-row items-center cursor-pointer;
+			.logoImage {
+				@apply text-4xl text-gray-500 mr-1;
+			}
+			.logoText {
+				@apply font-bold;
+				div {
+					@apply text-sm;
+					line-height: 1.1;
+				}
+			}
+		}
+		.navBlock {
+			@apply max-w-2xl;
+			> ul {
+				@apply flex justify-between;
+				li {
+					@apply justify-center flex;
+					.navItem {
+						@apply font-semibold mr-10 relative p-2;
+						&::after {
+							content: '';
+							display: block;
+							height: 3px;
+							background-color: #000;
+							position: absolute;
+							bottom: -2px;
+							left: 0;
+							width: 0;
+							opacity: 0;
+							transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
+						}
+						&:hover::after {
+							width: 100%;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
